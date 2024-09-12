@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/BT1/javascript.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>New product</h1>
+    <hr />
+    <form autocomplete="off">
+      <p>
+        <label>
+          Product Name
+          <input type="text" id="productName" />
+        </label>
+        <label>
+          Quantity
+          <input type="text" id="quantity" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Unit Price
+          <input type="text" id="unitPrice" />
+        </label>
+        <label>
+          Discount
+          <input type="text" id="discount" />
+        </label>
+      </p>
+      <p id="select">
+        <button type="button" onclick="sellFunction()">Sell</button>
+        <button type="button" onclick="cancelFunction()">Cancel</button>
+      </p>
+    </form>
+    <table id="tb">
+      <tr>
+        <th>ID</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Discount</th>
+        <th>Subtotal</th>
+      </tr>
+    </table>
+  </body>
+</html>
