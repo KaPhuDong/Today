@@ -1,0 +1,10 @@
+table {
+  border: 1px solid black;
+}
+#tb tr td {
+  border: 1px solid black;
+}
+#tb tr {
+  height: 27px;
+  text-align: left;
+}
