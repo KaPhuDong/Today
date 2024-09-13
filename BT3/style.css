@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+  margin: 0;
+}
+#container {
+  margin: 0 auto;
+  border: 2px solid rgb(73, 156, 182);
+  width: 700px;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  margin: 0 50px;
+}
+form,
+table {
+  padding: 10px 50px;
+  width: 600px;
+}
+table td {
+  width: 70px;
+  height: 40px;
+  text-align: left;
+}
+table thead {
+  background-color: rgb(54, 53, 53);
+  color: white;
+  height: 40px;
+}
+table tr td:first-child {
+  padding-left: 10px;
+}
+tfoot {
+  border-top: 1px solid black;
+}
+#submit {
+  background-color: rgb(54, 53, 53);
+  color: white;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+}
+form p label {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 50px;
+  height: 30px;
+}
