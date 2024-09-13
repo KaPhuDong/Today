@@ -4,7 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="/BT3/javascript.js"></script>
+    <title>Clothes</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <h1>Clothes</h1>
+      <form>
+        <p>
+          <label>Product Name <input type="text" name="" id="pn" /></label>
+        </p>
+        <p>
+          <label>Product Quantity <input type="text" name="" id="pq" /></label>
+        </p>
+        <p>
+          <label>Product Price <input type="text" name="" id="pp" /></label>
+        </p>
+        <button type="button" onclick="add()" id="submit">Add</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <td>No</td>
+            <td>Product</td>
+            <td>Quantity</td>
+            <td>Price</td>
+            <td>Sub Total</td>
+          </tr>
+        </thead>
+        <tbody id="tbd"></tbody>
+        <tfoot>
+          <td colspan="4">Total</td>
+          <td id="total"></td>
+        </tfoot>
+      </table>
+    </div>
+  </body>
 </html>
