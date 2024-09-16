@@ -8,38 +8,43 @@
     <script src="/BT2/javascript.js"></script>
   </head>
   <body>
-    <form autocomplete="off">
-      <label>
-        Product Name:
-        <input type="text" id="pn" />
-      </label>
-      <br />
-      <label>
-        Product Quantity:
-        <input type="text" id="pq" />
-      </label>
-      <br />
-      <label>
-        Product Price:
-        <input type="text" id="pp" />
-      </label>
-      <br />
-      <button type="button" onclick="addFunction()">Add</button>
-    </form>
-    <table id="tb">
-      <tr>
-        <td>No</td>
-        <td>Name</td>
-        <td>Quantity</td>
-        <td>Price</td>
-        <td>Sub-total</td>
-      </tr>
-      <tfoot>
+    <div class="container">
+      <form>
+        <p>
+          <label>
+            Product Name:
+            <input type="text" id="pn" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Product Quantity:
+            <input type="text" id="pq" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Product Price:
+            <input type="text" id="pp" />
+          </label>
+        </p>
+        <button type="button" onclick="addFunction()">Add</button>
+      </form>
+      <table id="tb">
         <tr>
-          <td colspan="4">Total</td>
-          <td id="total"></td>
+          <td>No</td>
+          <td>Name</td>
+          <td>Quantity</td>
+          <td>Price</td>
+          <td>Sub-total</td>
         </tr>
-      </tfoot>
-    </table>
+        <tfoot>
+          <tr>
+            <td colspan="4">Total</td>
+            <td id="total"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
   </body>
 </html>
