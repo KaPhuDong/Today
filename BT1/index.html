@@ -10,8 +10,8 @@
   <body>
     <h1>New product</h1>
     <hr />
-    <form autocomplete="off">
-      <p>
+    <form>
+      <p class="input">
         <label>
           Product Name
           <input type="text" id="productName" />
@@ -21,7 +21,7 @@
           <input type="text" id="quantity" />
         </label>
       </p>
-      <p>
+      <p class="input">
         <label>
           Unit Price
           <input type="text" id="unitPrice" />
@@ -33,7 +33,9 @@
       </p>
       <p id="select">
         <button type="button" onclick="sellFunction()">Sell</button>
-        <button type="button" onclick="cancelFunction()">Cancel</button>
+        <button type="button">
+          <a href="">Cancel</a>
+        </button>
       </p>
     </form>
     <table id="tb">

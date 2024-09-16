@@ -12,7 +12,7 @@ function sellFunction() {
   row += "<td>" + quantity + "</td>";
   row += "<td>" + unitPrice + "</td>";
   row += "<td>" + discount + "</td>";
-  row += "<td>" + subtotal + "</td>";
+  row += "<td>" + "$" + subtotal + "</td>";
   row += "</tr>";
   document.querySelector("#tb").innerHTML += row;
 
@@ -20,20 +20,4 @@ function sellFunction() {
   document.querySelector("#quantity").value = "";
   document.querySelector("#unitPrice").value = "";
   document.querySelector("#discount").value = "";
-}
-
-function cancelFunction() {
-  // document.querySelector("#productName").value = "";
-  // document.querySelector("#quantity").value = "";
-  // document.querySelector("#unitPrice").value = "";
-  // document.querySelector("#discount").value = "";
-  // // Xóa tất cả các hàng trong bảng (trừ hàng tiêu đề)
-  // var table = document.querySelector("#tb");
-  // var rowCount = table.rows.length;
-  // // Lặp qua bảng và xóa các hàng từ dưới lên để tránh lỗi index
-  // for (var i = rowCount - 1; i > 0; i--) {
-  //   table.deleteRow(i);
-  // }
-  // // Đặt lại ID về 0
-  // id = 0;
 }

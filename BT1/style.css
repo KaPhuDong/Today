@@ -1,11 +1,13 @@
 body {
   width: 620px;
   height: auto;
-  padding: 10px;
+  padding: 50px;
   border: 1px solid rgb(62, 230, 185);
+  margin: 0 auto;
+  margin-top: 50px;
 }
 table {
-  width: 600px;
+  width: 100%;
   border-spacing: 0;
   border: 1px solid #bbb;
 }
@@ -19,4 +21,21 @@ table {
 }
 #tb tr:last-child td {
   border: none;
+}
+button a {
+  text-decoration: none;
+  color: black;
+}
+.input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.input label {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
 }
