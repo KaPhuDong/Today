@@ -3,15 +3,16 @@ h1 {
   margin: 0;
 }
 #container {
+  position: relative;
+  top: 50px;
   margin: 0 auto;
   border: 2px solid rgb(73, 156, 182);
   width: 700px;
   padding: 20px;
 }
 table {
-  border-collapse: collapse;
-  box-sizing: border-box;
-  margin: 0 50px;
+  border-spacing: 0;
+  box-sizing: content-box;
 }
 form,
 table {
@@ -28,10 +29,10 @@ table thead {
   color: white;
   height: 40px;
 }
-table tr td:first-child {
+table tr td {
   padding-left: 10px;
 }
-tfoot {
+tfoot tr td {
   border-top: 1px solid black;
 }
 #submit {
